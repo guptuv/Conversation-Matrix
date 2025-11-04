@@ -22,12 +22,11 @@ React · TypeScript · MUI · Firebase · WebSockets · Cypress
 <img width="477" height="737" alt="image" src="https://github.com/user-attachments/assets/6df7f328-7892-4991-b647-e90c72183ed1" />
 
 
-<video width="480" controls>
-  <source src="https://github.com/guptuv/Conversation-Matrix/raw/main/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag You can see the video in demo.mp4 file.
-</video>
 
 <img width="518" height="721" alt="image" src="https://github.com/user-attachments/assets/9f80dd2d-2ba3-4028-b60f-2d0d3b21895f" />
+
+
+[![Watch the demo](./thumbnail.png)](https://github.com/guptuv/Conversation-Matrix/blob/main/demo.mp4)
 
 
 ## Features
