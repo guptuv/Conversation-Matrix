@@ -17,6 +17,9 @@ and Material UI for a smooth, modern experience.
 
 React · TypeScript · MUI · Firebase · WebSockets · Cypress  
 
+## Working
+![App Demo](./demo.gif)
+
 ## Features
 
 - Role-Based Authentication (RBAC)  
