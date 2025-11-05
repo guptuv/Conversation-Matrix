@@ -2,7 +2,15 @@
 
 > Modern historical chat app built with React, TypeScript & Supabase
 
-Conversation Matrix makes learning history engaging through AI-powered conversations. Ask about any historical event, person, or era, and get detailed, accurate responses in a modern chat interface.
+Conversation Matrix makes learning history engaging through AI-powered conversations, powered by a Large Language Model (LLM) specifically fine-tuned on Wikipedia's historical data. This specialized training means you get accurate, well-sourced responses about any historical event, person, or era, delivered through a modern chat interface.
+
+### AI Implementation
+The chat interface is backed by a fine-tuned LLM that:
+- Was trained on Wikipedia's comprehensive historical articles
+- Provides citations and sources for historical claims
+- Excels at historical context and connections
+- Maintains academic accuracy while being conversational
+- Updates responses based on verified historical sources
 
 ## Live Demonstration
 
@@ -29,9 +37,11 @@ Visit `http://localhost:8080` and start chatting!
 
 Built with modern tools for a great developer experience:
 
+- Specialized Historical LLM trained on Wikipedia data
+- Context-aware chat processing with source attribution
 - React 18 + TypeScript + Vite for the frontend
 - Supabase handling auth and real-time updates
-- Edge Functions for serverless chat processing
+- Edge Functions for serverless AI processing
 - Shadcn/ui + Tailwind CSS for the UI
 - React Query for state management
 
