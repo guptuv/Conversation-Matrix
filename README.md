@@ -1,80 +1,53 @@
 # Conversation Matrix
 
-A unified platform combining intelligent chatbots and real-time CRM communication.  
-Built with React, TypeScript, and Supabase integration — featuring secure authentication, real-time updates,  
-and a modern UI powered by Shadcn/ui components.
+> Modern historical chat app built with React, TypeScript & Supabase
 
-## Demo
+Conversation Matrix makes learning history engaging through AI-powered conversations. Ask about any historical event, person, or era, and get detailed, accurate responses in a modern chat interface.
 
-[![Conversation Matrix Demo](https://img.youtube.com/vi/mTERsF9CvlA/maxresdefault.jpg)](https://youtu.be/mTERsF9CvlA)
+## Live Demonstration
 
-Watch the demo video above to see Conversation Matrix in action. Click the image to play the video on YouTube.
+[![Conversation Matrix Demo](./public/Screenshot%202025-11-06%20010440.png)](https://youtu.be/mTERsF9CvlA)
 
-The demo showcases:
+Click the image above to watch the demo on YouTube!
 
-- Real-time chat interactions
-- AI-powered historical responses
-- Seamless UI interactions
-- Message history and threading
+## Quick Start
 
-## Features
+```bash
+# Install dependencies
+npm install
 
-- 🤖 **AI History Chatbot**  
-  Interactive conversations about historical events, figures, and eras using advanced AI models.
+# Set up your env file
+cp .env.example .env
 
-- 💬 **Real-Time Messaging**  
-  Instant message updates and seamless conversation management.
+# Start dev server
+npm run dev
+```
 
-- 🎨 **Modern UI Components**  
-  Built with Shadcn/ui and Tailwind CSS for a beautiful, responsive interface.
+Visit `http://localhost:8080` and start chatting!
 
-- 🚀 **Edge Functions**  
-  Serverless chat processing using Supabase Edge Functions.
+## What's Inside
 
-- 🔒 **Secure Authentication**  
-  Built-in authentication and authorization via Supabase.
+Built with modern tools for a great developer experience:
 
-## Tech Stack
+- React 18 + TypeScript + Vite for the frontend
+- Supabase handling auth and real-time updates
+- Edge Functions for serverless chat processing
+- Shadcn/ui + Tailwind CSS for the UI
+- React Query for state management
 
-- **Frontend:** React 18, TypeScript, Vite
-- **UI:** Tailwind CSS, Shadcn/ui components
-- **Backend:** Supabase (Database, Auth, Edge Functions)
-- **State Management:** React Query
-- **Build Tool:** Vite
-- **Package Manager:** npm/yarn
+## Setting Up Your Dev Environment
 
-## Prerequisites
+1. You'll need Node.js 18+ and a package manager (npm/yarn)
 
-- Node.js 18+
-- npm or yarn
-- Supabase account
-- AI provider account (OpenAI/similar)
-
-## Setup Instructions
-
-1. **Clone the repository**
+2. Clone and install:
 
    ```bash
    git clone https://github.com/guptuv/Conversation-Matrix.git
    cd Conversation-Matrix
-   ```
-
-2. **Install dependencies**
-
-   ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. **Environment Setup**
-
-   ```bash
-   # Copy the example env file
-   cp .env.example .env
-   ```
-
-   Edit `.env` and add your credentials:
+3. Set up your `.env`:
 
    ```env
    VITE_SUPABASE_PROJECT_ID="your-project-id"
@@ -82,86 +55,52 @@ The demo showcases:
    VITE_SUPABASE_URL="https://your-project.supabase.co"
    ```
 
-4. **Supabase Edge Function Setup**
+4. Deploy the chat function to Supabase Edge Functions:
+   - Copy `supabase/functions/chat/` to your Supabase project
+   - Add your AI provider's API key in the function settings
+   - Deploy and you're ready to go
 
-   - Navigate to Supabase Dashboard → Edge Functions
-   - Deploy the chat function from `supabase/functions/chat/`
-   - Set your AI provider's API key in the function's environment variables
+## Development Tips
 
-5. **Start Development Server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-   Visit http://localhost:8080
+Keep your code clean:
 
-## Development Guidelines
+- Run `npm run lint` before commits
+- Check types with `tsc --noEmit`
+- Use ESLint and Prettier (configs included)
 
-- 📝 **Environment Variables**
+Project structure is straightforward:
 
-  - Never commit `.env` files
-  - Keep `.env.example` updated with required variables
-  - Use appropriate environment-specific files (.env.local, .env.production)
+```
+src/
+  components/     # React components
+  hooks/         # Custom hooks
+  integrations/  # External services
+  lib/          # Utilities
+  pages/        # Route components
+```
 
-- 🔧 **Code Quality**
+## Deployment
 
-  - Run ESLint before commits: `npm run lint`
-  - Follow TypeScript strict mode guidelines
-  - Use consistent code formatting (configured in `.eslintrc`)
+Build for production:
 
-- 📦 **Package Management**
+```bash
+npm run build
+npm run preview  # Test the build locally
+```
 
-  - Use one package manager consistently (npm or yarn)
-  - Keep dependencies updated regularly
-  - Review security vulnerabilities with `npm audit`
-
-- 🏗️ **Project Structure**
-  - Components go in `src/components/`
-  - Pages in `src/pages/`
-  - Hooks in `src/hooks/`
-  - Types in `src/types/`
-  - Utils in `src/lib/`
-
-## Production Deployment
-
-1. Build the project:
-
-   ```bash
-   npm run build
-   # or
-   yarn build
-   ```
-
-2. Preview the build:
-
-   ```bash
-   npm run preview
-   # or
-   yarn preview
-   ```
-
-3. Deploy the `dist` folder to your hosting provider
-
-## Troubleshooting
-
-- **Missing Environment Variables**: Ensure all variables in `.env.example` are set in your `.env`
-- **Build Errors**: Check Node.js version (18+ required) and package manager compatibility
-- **API Errors**: Verify Supabase and AI provider credentials
-- **Type Errors**: Run `tsc --noEmit` to check for type issues
+The `dist` folder is ready to deploy to your favorite host.
 
 ## Contributing
 
-1. Fork the repository
+Found a bug or want to help? PRs welcome! Just:
+
+1. Fork it
 2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+3. Make your changes
+4. Push and open a PR
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT © [guptuv](LICENSE)
 
-## Support
-
-For support, please open an issue in the GitHub repository or contact the maintainers.
+Need help? Open an issue or reach out directly.
