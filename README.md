@@ -1,6 +1,6 @@
 # Conversation Matrix
 
-> Modern historical chat app built with React, TypeScript & Supabase
+> LLM-powered historical chat app built with Wikipedia data, React & Supabase
 
 Conversation Matrix makes learning history engaging through AI-powered conversations, powered by a Large Language Model (LLM) specifically fine-tuned on Wikipedia's historical data. This specialized training means you get accurate, well-sourced responses about any historical event, person, or era, delivered through a modern chat interface.
 
