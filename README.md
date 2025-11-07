@@ -13,10 +13,12 @@ The chat interface is backed by a fine-tuned LLM that:
 - Updates responses based on verified historical sources
 
 ## Live Demonstration
-
+#1.
 [![Conversation Matrix Demo](./public/Screenshot%202025-11-06%20010440.png)](https://youtu.be/mTERsF9CvlA)
+#2. 
+[![Conversation Matrix Demo](./public/Screenshot%202025-11-08%20020737.png)](https://youtu.be/IHz0pe8tZqI)
 
-Click the image above to watch the demo on YouTube!
+Click the images above to watch the demo on YouTube!
 
 ## Quick Start
 
